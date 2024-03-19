@@ -1,21 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../sections/Header.astro';
+import Head from '../sections/Head.astro';
 import Info from '../sections/Info.astro';
-import Testimonies from '../sections/Testimonies.astro';
-import Pictures from '../sections/Pictures.astro';
+import Clients from '../sections/Clients.astro';
+import Contact from '../sections/Contact.astro';
 import Footer from '../sections/Footer.astro';
-import Boton_Flotante from '../components/Boton_Flotante.astro';
+import Divider from '../components/Divider.astro';
+import Navbar from '../components/Navbar.astro';
 ---
 
-<Layout title="Body Canvas">
-	<Header />
-	<main>
-		<Info />
-		<Testimonies />
-		<Pictures />
-	</main>
-	<Footer />
-	<Boton_Flotante />
+<Layout title="ACIMPECABLE">
+	<Navbar />
+	<Head />
+	<Info />
+	<Divider />
+	<Clients />
+	<Divider />
+	<Contact />
+	<div class="flex flex-col justify-between">
+		<Footer />
+	</div>
 </Layout>
 

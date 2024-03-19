@@ -1,0 +1,73 @@
+<section>
+    <nav class="border-gray-200 dark:bg-gray-900" style="background-color: #03543f;">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="/">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">AC&L IMPECABLE</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false" style="color: #ffffff;">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="flex flex-col md:flex-row md:space-x-8 rtl:space-x-reverse mt-4 md:mt-0">
+              <li>
+                <a href="/about" class="py-2 px-3 text-white hover:underline" aria-current="page">Informacion</a>
+              </li>
+              <li>
+                <a href="/clientes" class="py-2 px-3 text-white hover:underline">Clientes</a>
+              </li>
+              <li>
+                <a href="/mision" class="py-2 px-3 text-white hover:underline">Mision</a>
+              </li>
+              <li>
+                <a href="/vision" class="py-2 px-3 text-white hover:underline">Vision</a>
+              </li>
+              <li>
+                <a href="/contacto" class="py-2 px-3 text-white hover:underline">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</section>
+
+<style>
+    /* Estilos para los ítems del menú */
+    #navbar-default a {
+    position: relative;
+    display: inline-block; /* Esto permite que la línea se ajuste al texto */
+    color: #ffffff; /* Asegura que el texto es blanco */
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+}
+
+#navbar-default a::after {
+    content: '';
+    position: absolute;
+    width: 0; /* Inicia con una anchura de 0 para que no se vea al inicio */
+    height: 2px;
+    bottom: 0; /* Ajusta según necesites para la posición de la línea */
+    left: 50%;
+    background-color: #ffffff; /* Color de la línea */
+    transition: all 0.3s ease; /* Animación suave de deslizamiento y aparición */
+}
+
+#navbar-default a:hover::after {
+    width: 100%; /* La línea se extiende al 100% del ancho del elemento */
+    left: 0; /* Comienza desde el borde izquierdo */
+}
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (): void => {
+  const navbarToggle = document.querySelector('[data-collapse-toggle="navbar-default"]') as HTMLButtonElement;
+  const navbarMenu = document.getElementById('navbar-default');
+
+  navbarToggle.addEventListener('click', (): void => {
+    const expanded: boolean = navbarToggle.getAttribute('aria-expanded') === 'true';
+    navbarToggle.setAttribute('aria-expanded', String(!expanded));
+    navbarMenu?.classList.toggle('hidden');
+  });
+});
+</script>

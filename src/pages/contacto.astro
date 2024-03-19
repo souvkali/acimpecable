@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../sections/Footer.astro';
+import Contact from '../sections/Contact.astro';
+---
+
+<section>
+    <Layout title="Contacto">
+        <Navbar/>
+        <div class="mt-44 animate-blurred-fade-in">
+            <Contact />
+        </div>
+        <footer class="fixed inset-x-0 bottom-0">
+            <Footer />
+        </footer>
+    </Layout>
+</section>

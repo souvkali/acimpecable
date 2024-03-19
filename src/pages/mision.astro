@@ -1,0 +1,30 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Layout from '../layouts/Layout.astro';
+import Footer from '../sections/Footer.astro';
+---
+
+<section>
+    <Layout title="Mision">
+        <Navbar />
+        <footer class="fixed inset-x-0 bottom-0">
+            <Footer />
+        </footer>
+        <div class="mt-40 animate-blurred-fade-in">
+            <div class="container mx-auto flex flex-col items-center py-12 px-4 mt-5">
+                <div class="w-full mb-8 text-center">
+                  <h1 class="text-4xl font-bold mb-4 text-custom-color">Mision</h1>
+                </div>
+                <div class="w-full">
+                  <p class="text-base mb-4 text-custom-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit facilis molestias, totam cum nostrum optio sit magnam necessitatibus alias, nam quisquam beatae deleniti eligendi numquam fugit modi qui natus voluptatum.</p>
+                </div>
+              </div>
+        </div>
+    </Layout>
+</section>
+
+<style>
+    .text-custom-color {
+      color: #464646;
+    }
+</style>

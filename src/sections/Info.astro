@@ -1,18 +1,22 @@
----
-    import Card from "../components/Card.astro"
-    import Card_Group from "../components/Card_Group.astro"
----
-
 <section>
-    <!-- About -->
-    <div class="flex justify-center mt-20 animate-slide-in-bottom">
-        <Card titulo="¿Quien Soy?" descripcion="Fisicoculturista con amplio conocimiento en fitness busca inspirar y asesorar, promoviendo el culturismo como un estilo de vida y orientando hacia la salud y el bienestar." />
+  <div class="container mx-auto flex flex-col items-center py-12 px-4 mt-5">
+    <div class="w-full mb-8 text-center">
+      <h1 class="text-4xl font-bold mb-4 text-custom-color">¿Quiénes Somos?</h1>
     </div>
-            <!-- ¿Estas Listo? -->
-    <div class="flex justify-center mt-10 animate-slide-in-bottom">
-        <div class="mt-32 w-full max-w-4xl px-4 text-center animate-fade-in">
-            <h1 class="text-4xl md:text-6xl font-bold mb-8 text-white">¿Estás listo?</h1>
-        </div>
+    <div class="w-full flex justify-center mb-8">
+      <img src="images/item1.jpg" alt="Descripción de la imagen" class="max-w-lg rounded-lg shadow-lg" />
     </div>
-        <Card_Group title1="Recolectamos información" desc1="Los formularios de comida y entrenamiento recopilan datos esenciales del cliente, como hábitos alimenticios, alergias, disponibilidad, experiencia en gimnasio y lesiones, para personalizar su plan nutricional y de entrenamiento según sus necesidades específicas." title2="Personalizamos tu plan" desc2="Tras recibir tu información, creamos un plan personalizado de entrenamiento, alimentación y suplementación orientado a tus metas físicas. Este plan se presenta en dos documentos PDF: uno para el plan o split de entrenamiento y otro para el plan de alimentación y suplementación." title3="Vemos Resultados" desc3="Nos ofrecemos a asistirte y asesorarte en todo momento, 24/7. Sin embargo, el éxito y los resultados dependen exclusivamente de tu compromiso y adherencia estricta al plan establecido. No hay tiempo que perder, así que agenda tu cita ahora."/>
+    <div class="w-full">
+      <p class="text-base mb-4 text-custom-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit facilis molestias, totam cum nostrum optio sit magnam necessitatibus alias, nam quisquam beatae deleniti eligendi numquam fugit modi qui natus voluptatum.</p>
+    </div>
+  </div>
 </section>
+
+<style>
+.text-custom-color {
+  color: #464646;
+}
+</style>
+
+
+

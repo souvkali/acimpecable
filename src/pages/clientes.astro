@@ -1,0 +1,18 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Layout from '../layouts/Layout.astro';
+import Clients from '../sections/Clients.astro';
+import Footer from '../sections/Footer.astro';
+---
+
+<section>
+    <Layout title="Clientes">
+        <Navbar/>
+        <div class="mt-48 animate-blurred-fade-in">
+            <Clients />
+        </div>
+        <footer class="fixed inset-x-0 bottom-0">
+            <Footer/>
+        </footer>
+    </Layout>
+</section>

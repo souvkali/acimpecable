@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Info from '../sections/Info.astro';
+import Footer from '../sections/Footer.astro';
+import Navbar from '../components/Navbar.astro';
+---
+
+<section>
+    <Layout title='Informacion'>
+        <Navbar/>
+        <div class="animate-blurred-fade-in mt-12">
+            <Info />
+        </div>
+        <footer class="fixed inset-x-0 bottom-0">
+            <Footer />
+        </footer>
+    </Layout>
+</section>
